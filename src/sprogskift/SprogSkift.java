@@ -24,10 +24,23 @@ public class SprogSkift {
 				case 4:
 					changeLanguage();
 					break;
+				case 8:
+					changeSource();
+					break;
 				default:
 					choice = 9;
 					break;
 			}
+		}
+	}
+	public static void changeSource() throws FileNotFoundException {
+		sprog.printSource(); 
+		int sourceChoice = sc.nextInt();
+		String  filename = "Data/dogsOffspringtest.csv";
+		String  dbname = "dogs";
+		switch(sourceChoice) {
+			case 1: dogs = new DogListCSV(filename);break;
+			case 2: dogs = new DogListDB(dbname);break;
 		}
 	}
 	public static void changeLanguage() {

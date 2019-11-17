@@ -17,6 +17,7 @@ public class Dansk implements SprogI{
 		System.out.println("2) vælg hund");
 		System.out.println("3) søg hund efter navn");
 		System.out.println("4) Skift til engelsk");
+		System.out.println("8) Skift datasource");
 		System.out.println("9) afslut programmet");
 		System.out.println("Indstast valg: ");
 	}
@@ -24,6 +25,11 @@ public class Dansk implements SprogI{
 		System.out.println("Skift sprog: ");
 		System.out.println("1) Dansk");
 		System.out.println("2) Engelsk");
+	}
+	public void printSource() {
+		System.out.println("Skift datakilde: ");
+		System.out.println("1) csv");
+		System.out.println("2) database");
 	}
 	
 }

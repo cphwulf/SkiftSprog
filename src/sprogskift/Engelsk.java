@@ -1,6 +1,6 @@
 package sprogskift;
 public class Engelsk implements SprogI{
-
+	
 	public void printMenu() {
 		System.out.println("Welcome to dogexchange");
 		System.out.println("1) show dogs");
@@ -14,6 +14,11 @@ public class Engelsk implements SprogI{
 		System.out.println("change language: ");
 		System.out.println("1) Danish");
 		System.out.println("2) English");
+	}
+	public void printSource() {
+		System.out.println("switch datasource: ");
+		System.out.println("1) csv");
+		System.out.println("2) database");
 	}
 	
 }
