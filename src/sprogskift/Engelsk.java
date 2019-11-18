@@ -1,5 +1,5 @@
 package sprogskift;
-public class Engelsk {
+public class Engelsk implements SprogI{
 
 	public void printMenu() {
 		System.out.println("Welcome to dogexchange");
